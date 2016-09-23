@@ -89,10 +89,10 @@ There are a number of methods available to you for operating on or manipulating 
 7.5.floor
   => this method will round the float down to the nearest fixnum. Here it will return 7
 
-7.5.ceil
+7.2.ceil
   => 8
-10.next
-  => 11
+7.5.round
+  => 8
 ```
 
 Here is the documentation for [Fixnums](http://ruby-doc.org/core-2.2.0/Fixnum.html) and [Floats](http://ruby-doc.org/core-2.2.0/Float.html). Try out a few more methods on your own!
