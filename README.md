@@ -146,7 +146,7 @@ The curly brackets denote the hash and this particular hash has two key/value pa
 
 You will often see hashes formatted in a way that is a little easier to read:
 ```ruby
-abbreviations = { 
+{ 
     "ny" => "New York",
     "co" => "Colorado",
     "ca" => "California"
@@ -163,11 +163,7 @@ Hashes can be created with literal constructors and class constructors.
 
 ### Operating on Hashes
 
-One of the simplest way to operate on a hash is to access a value by its key.  Using the example above, `abbreviations["co"]` would return `"Colorado"`.  Notice that accessing an element in a hash is similar to how we do it in an array, using square brackets: `[]`.
-
-If you wanted to go the other way, you could also access a key by its value using the `.key` method.  For example, `abbreviations.key("Colorado")` would return `"co"`.
-
-There are many more methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you check out the [hash methods documentation](http://ruby-doc.org/core-2.2.0/Hash.html) and test out a few!
+There are many methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you check out the [hash methods documentation](http://ruby-doc.org/core-2.2.0/Hash.html) and test out a few!
 
 ## Resources
 * [RailsBridge](http://docs.railsbridge.org) - [Data Types](http://docs.railsbridge.org/ruby/datatypes)
