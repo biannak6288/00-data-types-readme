@@ -6,7 +6,7 @@ This lesson will introduce you to the six data types in Ruby. Just like the Engl
 
 ## Objectives
 
-1. Identify and construct the six data types in Ruby: booleans, symbols, numbers, strings, arrays, and hashes
+1. Identify and construct the six data types in Ruby: strings, booleans, numbers, symbols, arrays, and hashes
 2. Distinguish between the literal and class constructor when creating strings, arrays, and hashes
 3. Perform basic operations on data types
 
@@ -55,7 +55,7 @@ Because every string is an instance of, or is based on, Ruby's String class, the
 
 Try these methods out with your own strings!  You can even try chaining them together, such as `"NYC".downcase.reverse`.  Make a prediction of the result, and then try it!
 
-When you finish testing out these basic string methods, take a few moments to peek at all of the String methods by reading the [Ruby documentation](http://ruby-doc.org/core-2.2.0/String.html) on Strings.  Test out any of the methods in IRB!
+When you finish testing out these basic string methods, take a few moments to peek at all of the String methods by reading the [Ruby documentation](http://ruby-doc.org/core-2.2.0/String.html) on Strings.  Test out a few of the methods in IRB!
 
 ## Booleans
 
@@ -142,7 +142,16 @@ Hashes also store objects in Ruby. However, they differ from arrays in that they
 Hashes look like this:
 `{"i'm a key" => "i'm a value!", "key2" => "value2"}`
 
-The curly brackets denote the hash and this particular hash has two key/value pairs.
+The curly brackets denote the hash and this particular hash has two key/value pairs.  Each key points to a corresponding value using a **hash rocket**: `=>`.
+
+You will often see hashes formatted in a way that is a little easier to read:
+```ruby
+abbreviations = { 
+    "ny" => "New York",
+    "co" => "Colorado",
+    "ca" => "California"
+}
+```
 
 ### Creating Hashes
 
@@ -154,7 +163,11 @@ Hashes can be created with literal constructors and class constructors.
 
 ### Operating on Hashes
 
-There are many methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you check out the [hash methods](http://ruby-doc.org/core-2.2.0/Hash.html) and test out a few!
+One of the simplest way to operate on a hash is to access a value by its key.  Using the example above, `abbreviations["co"]` would return `"Colorado"`.  Notice that accessing an element in a hash is similar to how we do it in an array, using square brackets: `[]`.
+
+If you wanted to go the other way, you could also access a key by its value using the `.key` method.  For example, `abbreviations.key("Colorado")` would return `"co"`.
+
+There are many more methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you check out the [hash methods documentation](http://ruby-doc.org/core-2.2.0/Hash.html) and test out a few!
 
 ## Resources
 * [RailsBridge](http://docs.railsbridge.org) - [Data Types](http://docs.railsbridge.org/ruby/datatypes)
