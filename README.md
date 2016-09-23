@@ -2,17 +2,13 @@
 
 ## Overview
 
-This lesson will introduce you to the six data types in Ruby. Just like the English language has different types of data or ways of representing information––words, numbers, lists, etc––Ruby has several different data types, which are also known as classes. (Ruby has several classes built in, but you'll learn how to make your own classes later on.)
+This lesson will introduce you to the six data types in Ruby. Just like the English language has different types of data or ways of representing information––words, numbers, lists, etc––Ruby has several different data types, which are also known as classes. (Ruby has several classes built in, but you'll learn how to make your own classes later on.) It is recommended that you use IRB to play around with these data types, but you can also use [repl.it/languages/ruby](http://repl.it/languages/ruby) if you don't have a terminal handy.
 
 ## Objectives
 
 1. Identify and construct the six data types in Ruby: booleans, symbols, numbers, strings, arrays, and hashes
 2. Distinguish between the literal and class constructor when creating strings, arrays, and hashes
 3. Perform basic operations on data types
-
-## Video
-
-<iframe width="853" height="480" src="https://www.youtube.com/embed/iaz3dojT9ew?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 
 ## Strings
 
@@ -46,7 +42,7 @@ You should see a return value of ` => String `. You can actually call `.class` o
 
 ### Operating on Strings
 
-Because every string is an instance of, or is based on, Ruby's String class, there are certain behaviors, or methods, available to us for operating on them. You can learn more about the many String methods by reading the [Ruby documentation](http://ruby-doc.org/core-2.2.0/String.html) on Strings. For now, we'll just take a look at a few examples.
+Because every string is an instance of, or is based on, Ruby's String class, there are certain behaviors, or methods, available to us for operating on them. Let's take a look at a few examples.
 
 ```ruby
 "hello".size
@@ -56,6 +52,10 @@ Because every string is an instance of, or is based on, Ruby's String class, the
 "hello".reverse
    => "olleh"
 ```
+
+Try these methods out with your own strings!  You can even try chaining them together, such as `"NYC".downcase.reverse`.  Make a prediction of the result, and then try it!
+
+When you finish testing out these basic string methods, take a few moments to peek at all of the String methods by reading the [Ruby documentation](http://ruby-doc.org/core-2.2.0/String.html) on Strings.  Test out any of the methods in IRB!
 
 ## Booleans
 
@@ -83,7 +83,7 @@ Once again, there is no special magic to creating integers. Simply declare them 
 
 ### Operating on Fixnums and Floats
 
-There are a number of methods available to you for operating on or manipulating integers. You can read more about Fixnums [here](http://ruby-doc.org/core-2.2.0/Fixnum.html) and more about Floats [here](http://ruby-doc.org/core-2.2.0/Float.html). For now, we'll just check out a few examples:
+There are a number of methods available to you for operating on or manipulating integers. Try out a few examples:
 
 ```ruby
 7.5.floor
@@ -94,6 +94,8 @@ There are a number of methods available to you for operating on or manipulating 
 10.next
   => 11
 ```
+
+Here is the documentation for [Fixnums](http://ruby-doc.org/core-2.2.0/Fixnum.html) and [Floats](http://ruby-doc.org/core-2.2.0/Float.html). Try out a few more methods on your own!
 
 ## Symbols
 
@@ -120,7 +122,7 @@ There are a number of ways to create an array. Just like with creating strings, 
 
 ### Operating on Arrays
 
-There are many ways to operate on arrays and on each individual item, or element, within an array. Later on in the course, we'll learn about iteration––the process of operating on each successive item in an array. For now, we'll preview a few array methods, and you can check out more [here](http://ruby-doc.org/core-2.2.0/Array.html).
+There are many ways to operate on arrays and on each individual item, or element, within an array. Later on in the course, we'll learn about iteration––the process of operating on each successive item in an array. For now, try a few simple methods:
 
 ```ruby
 [5, 100, 234, 7, 2].sort
@@ -130,6 +132,8 @@ There are many ways to operate on arrays and on each individual item, or element
 [1, 2, 3].reverse
   => [3, 2, 1]
 ```
+
+Check out more [array methods](http://ruby-doc.org/core-2.2.0/Array.html) and test out a few!
 
 ## Hashes
 
@@ -150,11 +154,7 @@ Hashes can be created with literal constructors and class constructors.
 
 ### Operating on Hashes
 
-There are many methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you can preview some methods [here](http://ruby-doc.org/core-2.2.0/Hash.html).
+There are many methods for operating on hashes and their individual key/value pairs. We will learn much more about them later, but you check out the [hash methods](http://ruby-doc.org/core-2.2.0/Hash.html) and test out a few!
 
 ## Resources
 * [RailsBridge](http://docs.railsbridge.org) - [Data Types](http://docs.railsbridge.org/ruby/datatypes)
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/data-types-readme' title='Data Types'>Data Types</a> on Learn.co and start learning to code for free.</p>
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/data-types-readme'>Ruby Data Types</a> on Learn.co and start learning to code for free.</p>
